@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var useid = prompt("Enter ur useid");
+         if (useid == "admin") {
+            document.write("접근을 허용합니다.");
+            } else {
+                level = prompt("회원 level을 입력하세요");  
+                if(level>=1 && level<=7) {              //중첩된 if 문 
+                document.write("콘텐츠 이용 가능합니다");
+            } else {
+            document.write("컨텐츠 이용 불가능합니다");
+            }
+        }
+</script>
+    
+</body>
+</html>
+
+
+
