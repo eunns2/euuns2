@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="result"></div>
+  <script>
+    var contents = "";  // image data holding
+    var n = 1;          //image count initiative 이미지 갯수 초기화
+    while(n <= 6){      //only 6 image input 이미지 6개
+        if( n % 2 == 1){
+            contents += "<img src='image1.png'>";
+        }else{
+            contents += "<img src='image2.png'>";
+        }
+        n++;
+    }
+
+    document.getElementById("result").innerHTML = contents;
+  </script>  
+</body>
+</html>

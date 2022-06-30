@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        var contents = ""; //이미지 초기화 하는거 ""
+        var n = 1;       //채울 이미지 수 초기화
+
+        while(n <= 4){
+         contents += "<img src='fish1.jpg'>";
+         n++;
+        }
+        document.getElementById("result").innerHTML = contents;
+    </script>
+</body>
+</html>

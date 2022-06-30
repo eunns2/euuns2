@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    var buy;
+    var DC;
+    var rate;
+    var pay;
+    buy = Number(prompt("물건 구매액을 입력하세요 (10,000원 이상시부터)"));
+    
+    if (buy >=10000 && buy < 50000){
+        rate = 5;
+      } else if ( buy >= 50000 && buy < 300000) {
+        rate = 7.5;
+      } else if ( buy >= 300000) {
+        rate = 10;
+      } else {
+        rate = 0;
+      }
+
+      DC = buy * (rate/100);
+      pay = buy - DC;
+
+      document.write("- 구매 금액 : " + buy + "원<br>");
+      document.write("- 할인율 : " + rate + "%<br>");
+      document.write("- 할인 금액 : " + DC + "원<br>");
+      document.write("- 지불 금액 : " + pay + "원<br>");
+
+
+  </script>
+</body>
+</html>

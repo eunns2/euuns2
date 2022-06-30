@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var unit = prompt("섭씨 1이나 화씨 2를 입력하세요");
+    var temp = parseInt(prompt("온도를 입력하세요"));
+    var state ;
+    if (unit =="2") {
+      temp = (temp-32) * 5/9;
+        document.write("온도는 : " + temp + "도 입니다.<br>");
+      } else {
+        document.write("온도는 : " + temp + "도 입니다.<br>");
+      }
+        // state 상태 점검
+      if (temp < 0) {
+        state = "Solid";
+      } else if (temp < 100) {
+        state = "liquid";
+      } else {
+        state = "Gases";
+      }
+   
+     
+      document.write("물체의 상태는 : " + state + " 입니다.")
+
+
+  </script>
+
+</body>
+</html>
