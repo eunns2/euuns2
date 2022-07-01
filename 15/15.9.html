@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+        <script>
+            // 국어 영어 수학 성적을 입력 받아서 합계과 평균을 함수로 구하기
+    
+            var a = Number(prompt("국어 성적을 입력하세요"));
+            var b = Number(prompt("영어 성적을 입력하세요"));
+            var c = Number(prompt("수학 성적을 입력하세요"));
+    
+            function button(a,b,c) {
+            var sum, avg;   // 두개의 변수 동시선언 
+            var sum = a + b + c ;
+            var avg = sum/3;
+          document.getElementById("a").innerHTML=a;
+          document.getElementById("b").innerHTML=b;
+          document.getElementById("c").innerHTML=c;
+          document.getElementById("sum").innerHTML=sum;
+          document.getElementById("avg").innerHTML=avg;
+            }
+        </script>  
+</head>
+<body>    
+    <div style="border:solid 1px #cccccc; padding: 10px; margin-top: 10px;">
+       - 국어 점수 <span id="a"></span>점<br>
+       - 영어 점수 <span id="b"></span>점<br>
+       - 수학 점수 <span id="c"></span>점<br><br>
+       합계 <span id="sum"></span><br>
+       평균 <span id="avg"></span>
+    </div>
+    <button onclick="button(a,b,c)"> 세 과목 성적 합계 평균 구하기 </button>
+</body>
+</html>

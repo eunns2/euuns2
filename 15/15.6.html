@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+    var r = prompt("반지름을 입력하세요");
+    function areaF(radius) {
+        area = radius ** 2 * 3.14;
+        document.write("- 원의 넓이 : " + area + "<br>");
+    }
+    function periF(radius) {
+        peripheral = radius * 2 * 3.14;
+        document.write("- 원주 : " + peripheral + "<br>");
+    }
+    function sphereF(radius) {
+        sphere = radius ** 3 * 3.14 * 4 / 3;
+        document.write("- 원의 부피 : " + sphere + "<br>");
+    }
+</script>
+</head>
+<body>
+    <button onclick="areaF(r)">원의 넓이</button>
+    <button onclick="periF(r)">원주</button>
+    <button onclick="sphereF(r)">원의 부피</button>
+</body>
+</html>

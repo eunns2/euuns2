@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+        <script>
+            // 국어 영어 수학 성적을 입력 받아서 합계과 평균을 함수로 구하기
+    
+            var a = Number(prompt("개당 가격을 입력하세요"));
+            var b = Number(prompt("구매 개수를 입력하세요"));
+            var c = Number(prompt("지불 금액을 입력하세요"));
+    
+            function change(a,b,c) {
+            var price,change;  
+            var price = a*b;
+            var change = c-price ;
+          document.getElementById("a").innerHTML=a;
+          document.getElementById("b").innerHTML=b;
+          document.getElementById("c").innerHTML=c;
+          document.getElementById("change").innerHTML=change;
+
+            }
+        </script>  
+</head>
+<body>    
+    <div style="border:solid 1px #cccccc; padding: 10px; margin-top: 10px;">
+        -개당 가격 : <span id="a"></span> 원<br>
+        -구매 개수 : <span id="b"></span> 개<br>
+        -지불 금액 :<span id="c"></span> 원<br>
+        거스름돈 : <span id="change"></span> 원<br>  
+
+    </div>
+    <button onclick="change(a,b,c)"> 거스름돈 구하기</button>
+</body>
+</html>

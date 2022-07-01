@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = 10; //함수 밖이어서 전역변수
+        function calcSum(){
+            var x = 12; // 함수내이므로 지역변수, x를 재지정하고 값도 할당
+            document.write(x + "<br>");
+            }
+            calcSum();  // 함수호출
+            document.write(x+"<br>");   // 함수 밖인데 x는 전역변수가 사용됨. 
+    </script>
+
+</head>
+<body>   
+</body>
+</html>

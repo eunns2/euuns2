@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var start = Number(prompt(" 숫자를 입력하세요 "));
+        var end = Number(prompt(" 숫자를 입력하세요"));
+
+        function sum(a,b) { //함수 호출시 start=a,end=b로 대입된다
+            var sum=0;
+            for (var i=a; i<=b; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+            var value = sum(start,end);
+            document.write( start+"에서"+end+"까지의 합계는 : " + value );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+       var a =Number(prompt("첫번째 수를 입력하세요 : "));
+       var b =Number(prompt("두번째 수를 입력하세요 : "));
+       var hap=0;
+       var i;
+       var temp;
+       
+       function sum(a,b){
+        if(a>b){
+            temp=a;
+            a=b;
+            b=temp;
+        }
+        for(i=a;i<=b;i++){
+            hap +=i ;
+        }
+        document.write(a+"에서 "+b+"까지의 합 : "+hap);
+       } 
+       sum(a,b);
+    </script>
+</head>
+<body>      
+</body>
+</html> -->
