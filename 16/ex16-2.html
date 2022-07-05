@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+</style> 
+<body>
+  <script>
+    // 책값(25000) 할인, 할인율(10%), 배송료(2500)를 입력받아서 지불금액을 계산한다.계산한다
+    // '지불_금액' = 가격 - (가격 * 할인_률) + 배송비' 이다
+    // 책값, 할인율, 배송료, 결제금액 항목으로 보이기
+
+   const price = 25000;
+      var discount = 10;
+      var shipping = 2500;
+      var pay ;
+
+     function get_pay (price, discount, shipping) {
+ 	var money = price - (price*discount/100) + shipping;
+	return money; 
+       }
+     pay = get_pay(price, discount, shipping);
+
+     document.write("- 책값은 : " + price + "월<br>");
+     document.write("- 할인율은 : " + discount + "%<br>");
+     document.write("- 배송료는 : " + shipping + "<br>");
+     document.write("-----------------------------------<br>");
+     document.write("- 지불금액은 : " + pay + "원");
+
+  </script>
+</body>
+</html>

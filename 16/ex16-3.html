@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title> 
+<style>
+    *{margin : 0 0 0 20px; padding : 0;}
+    li {list-style-type:square; margin-left:20px;}
+    #bluebox {border : solid 3px skyblue; line-height : 170%; padding:20px 0; margin:10px; };
+</style>
+</head>
+<body> 
+<div id = "bluebox">
+    <p> - 책값 : <span id="priceid">- </span> 원 </p>
+    <p> - 할인율 : <span id="saleid">- </span> % </p>
+    <p> - 배송비 : <span id="taxid">- </span> 원 </p>
+    <p> ------------------------------------</p>
+    <ul>
+    <li>지불금액:  <span id="payid">- </span> 원 </li>
+    </ul>
+<script>
+ function cal() {
+    var price = Number(prompt("책값을 입력하세요"));
+    var sale = Number(prompt("할인율%을 입력하세요 "));
+    var tax = Number(prompt("배송료를 입력하세요"));
+    var pay = price - (price*sale/100)+tax;
+    document.getElementById("priceid").innerHTML = price;
+    document.getElementById("saleid").innerHTML = sale;
+    document.getElementById("taxid").innerHTML = tax;
+    document.getElementById("payid").innerHTML = pay;
+}
+</script>
+</div>
+<button onclick="cal()">거스름돈 계산하기</button>
+</body>
+</html>

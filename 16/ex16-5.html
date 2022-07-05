@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+</style> 
+<script>
+  var person = {  //person 객체 생성
+    name:"홍길동",  //person 객체의 속한 속성
+    age : 25, //person 객체의 속한 속성
+    sayHello: function() {  //person 객체의 속한 매써드, 익명_함수 형태
+      document.write(this.name + "님 안녕하세요???"); //person 객체 안에서 이 객체에 속한 속성을 호출
+    }
+  };
+  document.write("이름 : " + person.name + "<br>"); // person 객체의 name을 지시
+  document.write("나이 :" + person.age + "<br>"); // person 객체의 age을 지시
+  person.sayHello();  // 매써드 호출
+</script>
+
+<body>
+  
+</body>
+</html>
