@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     button { background-color: yellow; padding: 10px; text-align: center; margin: 30px 20px; }
+  </style>
+  <script>
+    function changeText(obj) {
+    obj.style.color=" red";
+  }
+  function changeBg(obj){
+    obj.style.backgroundColor="pink";
+  }
+  </script>
+</head>
+<body>
+  <button onclick="changeText(this)">글씨 색상 변경하기</button>
+  <button onclick="changeBg(this)">배경색 바꾸기</button><br><br>
+  <button onclick="changeText(this)">글씨 색상 변경하기</button>
+  <button onclick="changeBg(this)">배경색 바꾸기</button>
+</body>
+</html>

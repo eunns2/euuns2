@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function Employee (name, age, position, salary) {
+      this.name = name;
+      this.age = age;
+      this.position = position;
+      this.salary = salary;
+    }
+    var person1 = new Employee ("Gang","35","과장","8,000,000");
+    document.write(person1.name + "/" +person1.age + "/" + person1.position + "/"+ person1.salary + "<br>");
+    var person2 = new Employee ("Kim","28","대리","5,000,000");
+    document.write(person2.name + "/" +person2.age + "/" + person2.position + "/" + person2.salary);
+
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

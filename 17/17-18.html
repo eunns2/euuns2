@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String 객체</title>
+  <script>
+    var str = "A friend in need is a friend indeed.";
+    document.write(str + "<br>");
+    document.write(str.replace("friend","buddy")+"<br>");
+    // 처음 나온 friend를 family로 변경, 두번째 friend는 불변.
+    var str1 = (str.replace(/friend/g,"buddy"));
+    // 정규표현식
+    document.write(str1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
