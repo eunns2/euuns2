@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+   <script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#box").remove();
+        });
+       
+    });
+   </script>
+   <div id="box" style="background-color:yellow">
+   <p>안녕하세요???</p>
+   <p>반갑습니다...</p>
+</div>
+   <button id="btn">요소 삭제하기</button>
+</body>
+</html>

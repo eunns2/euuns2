@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>  
+    <script>
+      /*$(document).ready(function() {  //$function() {} ); 식으로 처리가능*/
+      $(function(){
+        $("#btn1").click(function(){  
+          //btn1은 css에서의 선택자이고 jQuery에서도 동일하게 사용
+          var content = $("#box").text();
+          alert(content);
+      });
+        $("#btn2").click(function(){
+          var content = $("#box").html();
+          alert(content);
+      }); 
+    }); 
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div id="box">
+      <h3>요소 내용 가져오기</h3>
+      <p>text()는 요소의 텍스트만 가져오고, html은 태그도 같이 가져온다.</p>
+      </div>
+  <button id="btn1">텍스트 가져오기</button>
+  <button id="btn2">HTML 가져오기</button>
+  </body>
+</html>
+

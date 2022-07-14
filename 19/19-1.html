@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="/js/jquery-3.6.0.min.js"></script>  
+    <!-- jquery 불러오기 -->
+    <title></title>
+  </head>
+  <body>
+    <p>단락입니다.</p>
+    <button>배경 색상 변경하기</button>
+    <script>
+      $("button").click(function() { 
+        // button은 제이쿼리 함수, click() 은 제이쿼리 이벤트
+        $("p").css("background-color","yellow");  
+        // p도 제이쿼리 함수, css() 제이쿼리 메써드
+      });
+    </script>
+  </body>
+</html>
+<!-- 배경색상 변경하기를 클릭하면 배경색이 노란색으로 변경된다. 
+$(button)은 css의 요소 선택자 (태그 선택자)의 <button>과 같다.
+따라서 $(button)은 웹 페이지에서 button 요소를 선택한다.
+$p도 웹 페이지에서 p요소를 선택한다.-->

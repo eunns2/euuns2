@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   <script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#list").prepend("<li style='color : skyblue;'> 안녕하세요.</li>");
+        });
+    });
+   </script>
+   <ul id="list">
+    <li>항목1</li>
+    <li>항목2</li>
+    <li>항목3</li>
+   </ul> 
+   <button id="btn">항목 추가하기</button>
+</body>
+</html>
