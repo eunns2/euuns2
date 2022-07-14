@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+        $("h3").siblings().css("background-color","beige");
+      });
+  </script>
+    <style>
+    </style>
+
+  </head>
+<body>
+    <h2>siblings() 메써드</h2>
+    <p>타인</p>
+    <div>
+      <!--h3가 div 아래에 있으므로 div아래의 모든 요소들은 siblings-->
+      <P>형제 1</P>
+        <span>형제 2</span>
+        <h3>나</h3>
+        <h4>형제 3</h4>
+        <p>형제 4</p>
+    </div>
+  </body>
+</html>

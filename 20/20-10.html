@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+        $("div>span").css("background-color","skyblue");
+        
+      });
+    </script>
+    <style></style>
+    <title></title>
+  </head>
+<body>
+  <div>
+      <h2>h2 요소(자식)</h2>
+      <span>span 요소(자식)</span>  <!--div의 영향을 받음-->
+      <span>span 요소(자식)</span>
+      <span>span 요소(자식)</span>
+  </div>    
+  <div>
+      <h2>h2 요소(자식)</h2>
+      <p>p 요소(자식) 
+          <span>span 요소(후손)</span>  <!--div의 영향을 받지않음-->
+          <span>span 요소(후손)</span>
+        </p>
+      <p>p 요소(자식)</p>
+  </div>
+</body>
+</html>

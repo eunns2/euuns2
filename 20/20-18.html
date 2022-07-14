@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+        $("div").find("ul").css("background-color","yellow");
+        $("div").find("li").css("border","solid 2px red");
+        $("div").find("span").css("background-color","skyblue");
+      });
+  </script>
+    <style>
+    </style>
+
+  </head>
+<body>
+    <h2>find() 메써드</h2>
+    <div>
+        <ul>
+            <li>항목 1</li>
+            <li><span>항목2(span요소)</span></li>
+        </ul>
+        <ul>
+            <li>품목 1</li>
+            <li>품목 2</li>
+        </ul>
+    </div>
+  </body>
+</html>

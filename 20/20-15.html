@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+          $("li:first-child").css("background-color","yellow"); 
+          $("li:last-child").css("background-color","pink"); 
+          $("li:first").css("border","dotted 3px red");
+          $("li:last").css("border","dotted 3px red");
+      });
+  </script>
+    <style>
+      ul { border: solid 3px gray;}
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <h2> : first/last-child(n) 필터</h2>
+    <ul>
+        <li>항목 1</li>
+        <li>항목 2</li>
+        <li>항목 3</li>
+    </ul>
+    <ul>
+        <li>품목 1</li>
+        <li>품목 2</li>
+        <li>품목 3</li>
+    </ul>    
+</body>
+</body>
+</html>
+   
